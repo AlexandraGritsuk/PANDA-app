@@ -5,17 +5,20 @@ const MiniCssPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = (env, argv) => ({
-  entry: './src/script.ts', // путь к вашему исходному файлу
+  entry: './src/App.ts', // путь к вашему исходному файлу
   module: {
     rules: [
         {
-            test: /\.scss$/i,
-            use: [MiniCssPlugin.loader, {
-              loader: 'css-loader',
-              options: {
-                url: false
-              }
-            }, 'sass-loader'],
+          test: /\.(c|sa|sc)ss$/i,
+          use: [
+            // Creates `style` nodes from JS strings
+            "style-loader",
+            // Translates CSS into CommonJS
+            "css-loader",
+            // Compiles Sass to CSS
+            "sass-loader",]
+          // test: /\.css/i,
+          // use: ['style-loader','css-loader']
         },
         {
             test: /\.tsx?$/, // правило для обработки TypeScript файлов
@@ -33,7 +36,7 @@ module.exports = (env, argv) => ({
     clean: true,
   },
   plugins: [
-    new MiniCssPlugin({ filename: 'style.css' }),
+    new MiniCssPlugin({ filename: './src/style.css' }),
     new HtmlWebpackPlugin({
       template: './src/index.html', // путь к HTML-шаблону
     }),
