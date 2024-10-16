@@ -16,7 +16,7 @@
         "allowJs": true,
 
         //Language and Environment
-        "target": "ES6",
+        "target": "ESNext",
 
         //Completeness
         "skipLibCheck": true,

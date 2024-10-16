@@ -1,6 +1,5 @@
 @import "./sass/base/normalize";
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 .nav {
   padding: 0;
@@ -15,7 +14,7 @@
 }
 
 .header {
-  background: #B2B2B2;
+  background: #b2b2b2;
   width: 1024px;
   display: flex;
   justify-content: space-between;
@@ -52,6 +51,7 @@
 .nav a:last-child {
   margin-right: 0;
 }
+//MainPage
 
 .main_pages {
   width: 1024px;
@@ -66,22 +66,22 @@
   font-family: Lora;
   font-weight: 600;
   font-size: 40px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 .buttons a {
   height: 100px;
 }
-
+// Catalog
 .catalog {
   width: 1024px;
   display: flex;
   height: 600px;
-  background: #B2B2B2;
+  background: #b2b2b2;
 }
 
 .card {
-  background: #F3F4EF;
+  background: #f3f4ef;
   border: 1px gray solid;
   border-radius: 17px;
   margin: 50px 64px 53px 73px;
@@ -102,21 +102,21 @@
   font-family: Lora;
   font-weight: 600;
   font-size: 40px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 .card h5 {
   font-family: Lora;
   font-weight: 400;
   font-size: 32px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
-
+// Footer
 .footer {
   width: 1024px;
   padding-top: 64px;
   height: 302px;
-  background: #F3F4EF;
+  background: #f3f4ef;
   display: flex;
   justify-content: space-between;
 }
@@ -125,19 +125,20 @@
   margin-left: 83px;
 }
 
-.Logo h3{
+.Logo h3 {
   font-family: Lora;
   font-weight: 400;
   font-size: 32px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 .Info {
   margin-right: 49px;
 }
 
-.Info h3,a {
-  color: #B2B2B2;
+.Info h3,
+a {
+  color: #b2b2b2;
   font-family: Lora;
   font-weight: 400;
   font-size: 32px;
@@ -147,7 +148,7 @@
 .email {
   display: flex;
   flex-direction: row-reverse;
-  color: #B2B2B2;
+  color: #b2b2b2;
   text-align: right;
 }
 
@@ -155,4 +156,3 @@
   display: flex;
   flex-direction: row-reverse;
 }
-
