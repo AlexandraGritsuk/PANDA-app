@@ -15,7 +15,7 @@ export class MainPage extends Component {
       null,
       "Оставьте заявку на новую коллекцию PANDA"
     );
-    const catalog = new Component(this.root, "div", ["catalog"], null);
+    const catalog = new Component(this.root, "div", ["cataloge"], null);
 
     const FirstCard = new Component(catalog.root, "div", ["card"], null);
     new Component(

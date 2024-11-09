@@ -1,0 +1,60 @@
+  .main_pages {
+    width: 1024px;
+  }
+  
+  .mainImg {
+    background-image: url("../../assets/mainPhoto.png");
+    height: 512px;
+  }
+  
+  .main_pages p {
+    padding-left: 481px;
+    padding-top: 172px;
+    font-family: Lora;
+    font-weight: 600;
+    font-size: 40px;
+    color: #b2b2b2;
+  }
+  
+  .buttons a {
+    height: 100px;
+  }
+
+  .cataloge {
+    width: 1024px;
+    height: 600px;
+    display: flex;
+    background: #b2b2b2;
+  }
+  
+  .card {
+    background: #f3f4ef;
+    border: 1px gray solid;
+    border-radius: 17px;
+    margin: 50px 64px 53px 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:last-child {
+    margin: 50px 0px 53px 0px;
+  }
+  .card_img {
+    border-radius: 17px;
+    margin: 42px 62px 23px 63px;
+  }
+  
+  .card h3 {
+    font-family: Lora;
+    font-weight: 600;
+    font-size: 40px;
+    color: #b2b2b2;
+  }
+  
+  .card h5 {
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 32px;
+    color: #b2b2b2;
+  }

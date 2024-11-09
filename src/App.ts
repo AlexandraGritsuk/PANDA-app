@@ -5,7 +5,13 @@ import { Router } from "./Common/Router";
 import { Magazine } from "./Pages/MagazinePage";
 import { Information } from "./Pages/InformationPage";
 import { MainPage } from "./Pages/MainPage";
-import "./style.scss";
+import "./sass/style.scss";
+import { DBService } from "./Services/DBService";
+import { LogicService } from "./Services/LogicService";
+
+const dbService = new DBService();
+const logicService = new LogicService(dbService);
+
 class App {
   constructor(parent: HTMLElement) {
     const wrap = new Component(parent, "div", ["wrapper"]);
@@ -14,7 +20,7 @@ class App {
     const main = new Component(wrap.root, "main");
     const links = {
       "#": new MainPage(main.root),
-      "#magazine": new Magazine(main.root),
+      "#magazine": new Magazine(main.root,  logicService),
       "#information": new Information(main.root),
     };
 

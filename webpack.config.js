@@ -6,6 +6,12 @@ const MiniCssPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env, argv) => ({
   entry: './src/App.ts', // путь к вашему исходному файлу
+  mode: 'production',
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
   module: {
     rules: [
         {

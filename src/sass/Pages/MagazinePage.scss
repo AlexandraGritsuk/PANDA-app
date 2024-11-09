@@ -1,0 +1,15 @@
+.magazine {
+  width: 1024px;
+
+}
+
+.data__goods {
+  display: flex;
+  flex-wrap: wrap;
+  .cart {
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+  }
+}
+
+

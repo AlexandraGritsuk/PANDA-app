@@ -1,0 +1,44 @@
+.footer {
+    width: 1024px;
+    padding-top: 64px;
+    height: 302px;
+    background: #f3f4ef;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Logo {
+    margin-left: 83px;
+  }
+  
+  .Logo h3 {
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 32px;
+    color: #b2b2b2;
+  }
+  
+  .Info {
+    margin-right: 49px;
+  }
+  
+  .Info h3,
+  a {
+    color: #b2b2b2;
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: right;
+  }
+  
+  .email {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #b2b2b2;
+    text-align: right;
+  }
+  
+  .Links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
