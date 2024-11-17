@@ -6,9 +6,10 @@ export class Cart extends Component {
     constructor(parent: HTMLElement, private service: LogicService, private good: TGood) {
         super(parent,'div', ["cart"]);
 
-        new Component(this.root,'img', ["image_cart"], null , ["src", "alt"], ["../assets/mainLogo.svg", "good"]);
+        new Component(this.root,'img', ["image_cart"], null , ["src", "alt"], ["../assets/cartImg.png", "good"]);
 
-        new Component(this.root, "p", [], "Колличество - " + good.count + "шт");
-        new Component(this.root, "p", [], good.title);
+        new Component(this.root, "h3", [], good.title);
+
+        new Component(this.root, "h5", [], good.count + "345w");
     }
 }

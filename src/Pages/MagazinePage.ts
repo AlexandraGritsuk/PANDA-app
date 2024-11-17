@@ -13,10 +13,16 @@ export class Magazine extends Component {
   constructor(parent: HTMLElement, private service: LogicService) {
     super(parent, "div", ["magazine"]);
 
-    new Component(this.root, "p", null, "Здесь будут магазины");
+    new Component(this.root, "h3", ["magazine_title"],"Осень 2024");
+    new Component(this.root, "h5", ["magazine_subtitle"],"Женская одежда");
+
+
+
 
     const divData = new Component(this.root, 'div', ["goods_pages__data"]);
-    this.divButtons = new Component(divData.root, 'div', ['data__buttons']);
+    const divSelector = new Component(divData.root, 'div', ["selector"]);
+    new Component(divSelector.root, "div", ["selected"],"Категория");
+    this.divButtons = new Component(divSelector.root, 'div', ['data__buttons']);
     this.divGoods = new Component(divData.root, 'div', ["data__goods"]);
     service.addListener("updateGoodsOnPage", (goods) => {
       if (goods) this.updateGoodsOnPage(goods as TGood[]);
