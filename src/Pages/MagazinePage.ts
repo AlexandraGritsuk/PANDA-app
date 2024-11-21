@@ -1,9 +1,9 @@
 import { Component } from "../Abstract/Componets";
 import { TGood } from "../Abstract/Types";
-import { ButtonTypeGood } from "../Common/ButtonTypeGood";
 import { Cart } from "../Common/Cart";
 import { LogicService } from "../Services/LogicService";
-
+import { SelectTypeGoods } from "../Common/SelectTypeGoods";
+import { SelectFilter } from "../Common/SelectFilter";
 export class Magazine extends Component {
   stateUpdate: boolean = false;
 
@@ -20,9 +20,7 @@ export class Magazine extends Component {
 
 
     const divData = new Component(this.root, 'div', ["goods_pages__data"]);
-    const divSelector = new Component(divData.root, 'div', ["selector"]);
-    new Component(divSelector.root, "div", ["selected"],"Категория");
-    this.divButtons = new Component(divSelector.root, 'div', ['data__buttons']);
+    this.divButtons = new Component(divData.root, 'div', ['data__buttons']);
     this.divGoods = new Component(divData.root, 'div', ["data__goods"]);
     service.addListener("updateGoodsOnPage", (goods) => {
       if (goods) this.updateGoodsOnPage(goods as TGood[]);
@@ -39,10 +37,18 @@ export class Magazine extends Component {
 
   update(): void {
     this.service.getTypesGoods().then((typesGoods) => {
-      typesGoods.forEach((typeGood,i) => {
-        if (this.divButtons) new ButtonTypeGood(this.divButtons.root, this.service, typeGood);
-      });
-      this.service.updateAllGoods();
+      if (this.divButtons) {
+        new SelectTypeGoods(this.divButtons.root,this.service, typesGoods);
+        new SelectFilter(this.divButtons.root, this.service, "Цвет", ["серый", "бежевый", 'черный'], 'color');
+
+
+        const sortButton = new Component(this.divButtons.root, 'input', ['select_type_sort'], "", ["type","value"], ["button", "сортировка"])
+          sortButton.root.onclick = () => {
+            this.service.changeSortGoods();
+          };
+      }
+      
+      this.service.updateGoodsByType('');
     });
   }
 
