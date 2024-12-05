@@ -1,0 +1,67 @@
+.details_page {
+    display: flex;
+    background: #F3F4EF;
+    width: 1024px;
+    justify-content: center;
+
+    img {
+        margin: 110px 120px 0px 60px;
+    }
+
+    h2 {
+        margin-top: 68px;
+        font-family: Lora;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46.08px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #B2B2B2;
+    }
+
+    .attribute {
+        margin-top: 15px;
+    }
+    .type {
+        color: #B2B2B2;
+        font-family: Lora;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40.96px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .value {
+        
+        color: #B2B2B2;
+        font-family: Lora;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.72px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .cartButton {
+        margin-top: 35px;
+        width: 281px;
+        height: 74px;
+        border-radius: 10px;
+        background-color: #B2B2B2;
+        font-family: Lora;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 34.56px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #F1F1EF;
+        border: none;
+    }
+}
+
+

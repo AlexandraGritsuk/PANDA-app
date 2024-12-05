@@ -8,6 +8,7 @@ import { MainPage } from "./Pages/MainPage";
 import "./sass/style.scss";
 import { DBService } from "./Services/DBService";
 import { LogicService } from "./Services/LogicService";
+import { DetailsPage } from "./Pages/DetailsPage";
 
 const dbService = new DBService();
 const logicService = new LogicService(dbService);
@@ -22,6 +23,8 @@ class App {
       "#": new MainPage(main.root),
       "#magazine": new Magazine(main.root,  logicService),
       "#information": new Information(main.root),
+      "#details": new DetailsPage(main.root,  logicService)
+      //"#details": new Information(main.root)
     };
 
     new Router(links);

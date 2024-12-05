@@ -1,4 +1,5 @@
 import { Page } from "../Abstract/Inteface";
+import { DetailsPage } from "../Pages/DetailsPage";
 
 export class Router {
   constructor(public links: Record<string, Page>) {
@@ -13,11 +14,18 @@ export class Router {
     Object.values(this.links).forEach((el) => el.myRemove());
 
     const url = window.location.hash.slice(1);
-
+    console.log(url);
+    
     if (url === "magazine") {
       this.links["#magazine"].renderWithUpdate();
     } else if (url === "information") {
       this.links["#information"].renderWithUpdate();
+    } else if (url === "details"){
+      if ((this.links["#details"] as DetailsPage).isGoodInDetailsPage()) {
+        this.links["#details"].renderWithUpdate();
+      } else {
+        window.location.hash = "#magazine";
+      }
     } else {
       this.links["#"].renderWithUpdate();
     }
