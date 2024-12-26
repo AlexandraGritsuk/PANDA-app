@@ -1,0 +1,36 @@
+[19:16:12] GUI initialization complete
+[19:16:12] Start connection check in 5s
+[19:16:12] Start updates check in 4s
+[19:16:12] Unlocker is up to date
+[19:16:12] GitHub connection established
+[19:16:12] Server connection established
+[19:16:16] Unlocking...
+[19:16:16] Game path: E:\Steam\steamapps\common\Stellaris
+[19:16:16] Unlock started
+[19:16:16] Settings:
+Path: E:\Steam\steamapps\common\Stellaris
+Full reinstall: False
+Alt unlock: False
+Skip reinstall: False
+[19:16:16] Cream api creating...
+[19:16:16] Cant connect steamcmd. Rertying...
+[19:16:17] Cant connect steamcmd. Rertying...
+[19:16:17] Cant connect steamcmd. Rertying...
+[19:16:17] False
+[19:16:17] SteamCmd unavailable. Skipped
+[19:16:17] Dlc downloaded
+[19:16:17] Reinstalling
+[19:16:17] Game path: E:\Steam\steamapps\common\Stellaris
+[19:16:17] Launcher Path: E:\Steam\steamapps\common\Stellaris\launcher-installer-windows_2024.14.msi
+Path exists: True
+[19:16:17] Deleting launcher...
+[19:16:17] Removing C:\Users\dima_\AppData\Local\Programs\Paradox Interactive\launcher\
+[19:16:17] Removing C:\Users\dima_\AppData\Local\Paradox Interactive\
+[19:16:17] Removing C:\Users\dima_\AppData\Roaming\Paradox Interactive
+[19:16:17] Removing C:\Users\dima_\AppData\Roaming\paradox-launcher-v2
+[19:16:20] Installing launcher...
+[19:16:26] Replacing files
+[19:16:26] Unzipping...
+[19:16:30] Copy to path: C:\Users\dima_\AppData\Local\Programs\Paradox Interactive\launcher\launcher-v2.2024.14\resources\app.asar.unpacked\node_modules\greenworks\lib
+[19:16:30] Copy complete
+[19:16:30] All done!

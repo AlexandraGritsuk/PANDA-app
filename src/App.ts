@@ -24,7 +24,6 @@ class App {
       "#magazine": new Magazine(main.root,  logicService),
       "#information": new Information(main.root),
       "#details": new DetailsPage(main.root,  logicService)
-      //"#details": new Information(main.root)
     };
 
     new Router(links);

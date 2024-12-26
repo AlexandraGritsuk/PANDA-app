@@ -99,4 +99,19 @@ export class LogicService extends Observer {
         this.dispatch("updatePageDetails", good);
         window.location.hash = "#details";
     }
+
+    confirmIdentificationCustomer(customId: string, code: string): void {
+        this.dbService.confirmIdentificationCustomer(customerId, code).then((responce) => {
+            if (responce) {
+                if (responce.error.code == 0) this.userCustomer = responce.customer;
+                this.dispatch("end_identification", responce);
+            } else {
+                alert("Сбой авторизации.");
+            }
+        });
+    }
+
+    getUserCustomer(): TCustomer | null {
+        return this.getUserCustomer;
+    }
 }
