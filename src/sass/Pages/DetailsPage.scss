@@ -2,25 +2,30 @@
     display: flex;
     background: #F3F4EF;
     width: 1024px;
-    justify-content: center;
 
     .image_Cart {
         margin: 110px 120px 0px 60px;
     }
 
     h2 {
+        margin-left: 425px;
         margin-top: 68px;
         font-family: Lora;
         font-size: 36px;
         font-weight: 600;
         line-height: 46.08px;
-        text-align: left;
+        text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #B2B2B2;
     }
 
-    
+    .test {
+        position: absolute;
+        width: 600px;
+        top: 200px;
+        right: 730px;
+    }
 
     .attribute {
         margin-top: 15px;
@@ -49,7 +54,10 @@
     }
 
     .cartButton {
-        margin-top: 35px;
+        position: absolute;
+        margin-left: 420px;
+        top: 450px;
+
         width: 281px;
         height: 74px;
         border-radius: 10px;

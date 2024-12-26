@@ -44,13 +44,13 @@ export class PersonPage extends Component {
       }
 
       update(): void {
-        const userCustomer = this.service.getUserCustomer();
-        if (userCustomer) {
-            this.spanName.root.innerHTML = userCustomer.name;
-            this.spanEmail.root.innerHTML = userCustomer.email;
-            this.spanMobileNumber.root.innerHTML = userCustomer.mobile;
-            this.spanMobileOperator.root.innerHTML = `(${userCustomer.operatorType})`;
-            this.spanAdress.root.innerHTML = userCustomer.adress;
-        }
+        //const userCustomer = this.service.getUserCustomer();
+        // if (userCustomer) {
+        //     this.spanName.root.innerHTML = userCustomer.name;
+        //     this.spanEmail.root.innerHTML = userCustomer.email;
+        //     this.spanMobileNumber.root.innerHTML = userCustomer.mobile;
+        //     this.spanMobileOperator.root.innerHTML = `(${userCustomer.operatorType})`;
+        //     this.spanAdress.root.innerHTML = userCustomer.adress;
+        // }
       }
 }

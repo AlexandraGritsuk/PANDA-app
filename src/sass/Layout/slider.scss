@@ -1,9 +1,9 @@
 .slider_wrapper {
-    margin-left: 60px;
     width: 306px;
     height: 519px;
     position: relative;
     overflow: hidden;
+    margin-left: 60px;
 }
 
 .slider {
@@ -12,7 +12,6 @@
     z-index: 1;
     left: -100%;
     display: flex;
-
     img {
         width: 100%;
     }
@@ -26,15 +25,19 @@
 
 
 .button__slider {
+    font-size: 30px;
+    background: none;
     position: absolute;
     z-index: 2;
     width: 30px;
     height: 30px;
     top:calc(100% / 2 - 15px);
+    border: none;
 }
 
 .left_button_slider {
     left: 15px;
+    color:black
 }
 
 .right_button_slider {

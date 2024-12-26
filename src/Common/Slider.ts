@@ -23,11 +23,11 @@ export class Slider extends Component {
         this.imgCenter = new Component(divPhotoCenter.root, "img", [], null, ["src", "alt"], [this.photos[0], this.nameGood]);
         const divPhotoRight = new Component(this.divSlider.root, "div", ["right__slider"]);
         this.imgRight = new Component(divPhotoRight.root, "img", [], null, ["src", "alt"], [this.photos[0], this.nameGood]);
-        this.btnLeft = new Component(this.root, "button", ["left_button_slider", "button__slider"], "<<");
+        this.btnLeft = new Component(this.root, "button", ["left_button_slider", "button__slider"], "◁");
         this.btnLeft.root.onclick = () => {
             this.moveLeftSlider();
         };
-        this.btnRight = new Component(this.root, "button", ["right_button_slider", "button__slider"], ">>");
+        this.btnRight = new Component(this.root, "button", ["right_button_slider", "button__slider"], "▷");
         this.btnRight.root.onclick = () => {
             this.moveRightSlider();
         };

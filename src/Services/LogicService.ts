@@ -100,18 +100,18 @@ export class LogicService extends Observer {
         window.location.hash = "#details";
     }
 
-    confirmIdentificationCustomer(customId: string, code: string): void {
-        this.dbService.confirmIdentificationCustomer(customerId, code).then((responce) => {
-            if (responce) {
-                if (responce.error.code == 0) this.userCustomer = responce.customer;
-                this.dispatch("end_identification", responce);
-            } else {
-                alert("Сбой авторизации.");
-            }
-        });
-    }
+    // confirmIdentificationCustomer(customId: string, code: string): void {
+    //     this.dbService.confirmIdentificationCustomer(customerId, code).then((responce) => {
+    //         if (responce) {
+    //             if (responce.error.code == 0) this.userCustomer = responce.customer;
+    //             this.dispatch("end_identification", responce);
+    //         } else {
+    //             alert("Сбой авторизации.");
+    //         }
+    //     });
+    // }
 
-    getUserCustomer(): TCustomer | null {
-        return this.getUserCustomer;
-    }
+    // getUserCustomer(): TCustomer | null {
+    //     return this.getUserCustomer;
+    // }
 }
