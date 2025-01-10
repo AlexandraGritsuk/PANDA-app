@@ -1,8 +1,9 @@
 import { Page } from "../Abstract/Inteface";
 import { DetailsPage } from "../Pages/DetailsPage";
+import { LogicService } from "../Services/LogicService";
 
 export class Router {
-  constructor(public links: Record<string, Page>) {
+  constructor(public links: Record<string, Page>, private service: LogicService) {
     window.onhashchange = () => {
       this.openPage();
     };
@@ -16,18 +17,45 @@ export class Router {
     const url = window.location.hash.slice(1);
     console.log(url);
     
-    if (url === "magazine") {
-      this.links["#magazine"].renderWithUpdate();
-    } else if (url === "information") {
-      this.links["#information"].renderWithUpdate();
-    } else if (url === "details"){
-      if ((this.links["#details"] as DetailsPage).isGoodInDetailsPage()) {
-        this.links["#details"].renderWithUpdate();
-      } else {
-        window.location.hash = "#magazine";
-      }
-    } else {
-      this.links["#"].renderWithUpdate();
+    const isUserCustomer = this.service.getUserCustomer();
+    switch (url) {
+      case "magazine": 
+        this.links["#magazine"].renderWithUpdate();
+        break;
+      case "auth": 
+        if(!isUserCustomer) {
+          this.links["#auth"].renderWithUpdate();
+        } else {
+          window.location.hash = "#personal";
+        }
+        break;
+      case "personal":
+        if(isUserCustomer) {
+          this.links["#personal"].renderWithUpdate();
+        } else {
+          window.location.hash = "#auth";
+        }
+        break;
+      case "reg":
+        if(!isUserCustomer) {
+          this.links["#reg"].renderWithUpdate();
+        } else {
+          window.location.hash = "#personal";
+        }
+        break;
+      case "details":
+        if((this.links["#details"] as DetailsPage).isGoodInDetailsPage()) {
+          this.links["#details"].renderWithUpdate();
+        } else {
+          window.location.hash = "#magazine";
+        }
+        break;
+      case "information":
+        this.links["#information"].renderWithUpdate();
+        break;
+      default:
+        this.links["#"].renderWithUpdate();
+        break;
     }
   }
 }

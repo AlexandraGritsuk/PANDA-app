@@ -18,7 +18,7 @@ export class Header extends Component {
     //const block = new Component(nav.root, "div", ["block"]);
     new Component(nav.root, "a", null, "Каталог", ["href"], ["#"]);
     new Component(nav.root, "a", null, "Магазины", ["href"], ["#magazine"]);
-    new Component(nav.root, "a", null, "Контакты", ["href"], ["#information"]);
+    new Component(nav.root, "a", null, "Контакты", ["href"], ["#"]);
 
     const buttons = new Component(this.root, "div", ["buttons"]);
 
@@ -30,7 +30,7 @@ export class Header extends Component {
       ["profile"],
       null,
       ["href"],
-      ["#"]
+      ["#auth"]
     );
     const cart = new Component(
       buttons.root,

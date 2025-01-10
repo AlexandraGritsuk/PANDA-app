@@ -1,0 +1,156 @@
+.auth_pages {
+    height: 503px;
+    background-image: url("../../assets/reg.png");
+    width: 1024px;
+    background-repeat: no-repeat;
+    background-color: #f1f1ef;
+    padding-top: 85px;
+
+    .authTitle {
+        color: #F1F1EF;
+        padding-top: 30px;
+        margin-left: 30%;
+        text-align: center;
+        font-family: Lora;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40.96px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .titit {
+        background: #B2B2B2B2;
+        width: 474px;
+        height: 340px;
+        margin-left: 30%;
+    }
+
+    .mobile {
+        padding-top: 15px;
+        padding-left: 80px;
+
+        input {
+            width: 210px;
+            height: 34px;
+            background: #C6C6C5;
+            font-size: 20px;
+            color: white;
+        }
+
+        label {
+            margin-right: 10px;
+            font-family: Lora;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+            color: white;
+        }
+    }
+
+    .buttonAuthMobile {
+        margin-left: 160px;
+        margin-top: 15px;
+        font-family: Lora;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.72px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        background: #C6C6C5B2;
+        border: 1px solid #F4F4F2;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .registr {
+        margin-left: 15px;
+        margin-top: 15px;
+        font-family: Lora;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.72px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+    }
+
+    .registrButton {
+        margin-left: 15px;
+        font-family: Lora;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.72px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        background: #C6C6C5B2;
+        border: 1px solid #F4F4F2;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .authCode {
+        background: #B2B2B2B2;
+        width: 474px;
+        height: 340px;
+        margin-left: 30%;
+
+        p {
+            padding-top: 15px;
+            padding-left: 30px;
+            color: white;
+            font-family: Lora;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30.72px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        label {
+            padding-left: 90px;
+            color: white;
+            font-family: Lora;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30.72px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .inputAuthCode {
+            height: 30px;
+            width: 200px;
+            margin-left: 10px;
+            background: #C6C6C5;
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    .exitForm {
+        background: #B2B2B2B2;
+        width: 474px;
+        height: 340px;
+        margin-left: 30%;
+
+        p {
+            padding-top: 15px;
+            padding-left: 45px;
+            color: white;
+            font-family: Lora;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30.72px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

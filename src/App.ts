@@ -9,6 +9,9 @@ import "./sass/style.scss";
 import { DBService } from "./Services/DBService";
 import { LogicService } from "./Services/LogicService";
 import { DetailsPage } from "./Pages/DetailsPage";
+import { RegPage } from "./Pages/RegPage";
+import { PersonPage } from "./Pages/PersonPage";
+import { AuthPage } from "./Pages/AuthPage";
 
 const dbService = new DBService();
 const logicService = new LogicService(dbService);
@@ -23,10 +26,13 @@ class App {
       "#": new MainPage(main.root),
       "#magazine": new Magazine(main.root,  logicService),
       "#information": new Information(main.root),
-      "#details": new DetailsPage(main.root,  logicService)
+      "#details": new DetailsPage(main.root,  logicService),
+      "#reg": new RegPage(main.root,  logicService),
+      "#personal": new PersonPage(main.root,  logicService),
+      "#auth": new AuthPage(main.root,  logicService)
     };
 
-    new Router(links);
+    new Router(links, logicService);
 
     new Footer(wrap.root);
   }

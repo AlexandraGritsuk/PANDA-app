@@ -15,7 +15,8 @@ export class PersonPage extends Component {
 
         new Component(this.root, "p", null, "Личный кабинет");
 
-        const divPersonal = new Component(this.root, "div");
+
+        const divPersonal = new Component(this.root, "div", ["infoPages"]);
 
         const divName = new Component(divPersonal.root, "div");
         new Component(divName.root, "span", null, "Имя: ");
@@ -44,13 +45,15 @@ export class PersonPage extends Component {
       }
 
       update(): void {
-        //const userCustomer = this.service.getUserCustomer();
-        // if (userCustomer) {
-        //     this.spanName.root.innerHTML = userCustomer.name;
-        //     this.spanEmail.root.innerHTML = userCustomer.email;
-        //     this.spanMobileNumber.root.innerHTML = userCustomer.mobile;
-        //     this.spanMobileOperator.root.innerHTML = `(${userCustomer.operatorType})`;
-        //     this.spanAdress.root.innerHTML = userCustomer.adress;
-        // }
+        const userCustomer = this.service.getUserCustomer();
+        console.log(userCustomer);
+        
+        if (userCustomer) {
+            this.spanName.root.innerHTML = userCustomer.name;
+            this.spanEmail.root.innerHTML = userCustomer.email;
+            this.spanMobileNumber.root.innerHTML = userCustomer.mobile;
+            this.spanMobileOperator.root.innerHTML = `(${userCustomer.operatorType})`;
+            this.spanAdress.root.innerHTML = userCustomer.adress;
+        }
       }
 }

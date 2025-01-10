@@ -7,7 +7,6 @@ export class Cart extends Component {
         super(parent,'a', ["cart"]);
 
         new Component(this.root,'img', ["image_cart"], null , ["src", "alt"], [good.photoLink, "good"]);
-        //new Component(this.root,'img', ["image_cart"], null , ["src", "alt"], [good.photoLink, "good"]);
 
 
         new Component(this.root, "h3", [], good.title);
