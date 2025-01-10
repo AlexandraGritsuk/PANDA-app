@@ -12,7 +12,7 @@ export class RegPage extends Component {
 
         new Component(this.root, "p", null, "Страница регистрации");
 
-        const divFormReg = new Component(this.root, "div");
+        const divFormReg = new Component(this.root, "div", ["form"]);
 
         const divName = new Component(divFormReg.root, "div");
         new Component(divName.root, "label", null, "Имя", ["for"], ["inputName"]);
