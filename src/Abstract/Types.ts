@@ -1,4 +1,3 @@
-import { OperationType } from "firebase/auth/cordova";
 
 export type TTypeGood = {
     id:number;

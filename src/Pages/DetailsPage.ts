@@ -14,7 +14,7 @@ export class DetailsPage extends Component {
 
   constructor(parent: HTMLElement, private service: LogicService) {
     super(parent, "div", ["details_page"]);
-    const mainDiv = new Component(this.root, "div");
+    const mainDiv = new Component(this.root, "div", ['maindiv']);
     this.h2Name = new Component(mainDiv.root, "h2");
     
     this.slider = new Slider(mainDiv.root, service);

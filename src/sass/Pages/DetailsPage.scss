@@ -8,7 +8,7 @@
     }
 
     h2 {
-        margin-left: 425px;
+        margin-left: 110px;
         margin-top: 68px;
         font-family: Lora;
         font-size: 36px;
@@ -19,12 +19,14 @@
         text-decoration-skip-ink: none;
         color: #B2B2B2;
     }
-
+    .maindiv {
+        width: 1024px;
+        position: relative;
+    }
     .test {
         position: absolute;
-        width: 600px;
-        top: 200px;
-        right: 920px;
+        top: 100px;
+        right: 350px;
     }
 
     .attribute {
@@ -56,7 +58,7 @@
     .cartButton {
         position: absolute;
         margin-left: 420px;
-        top: 450px;
+        top: 300px;
 
         width: 281px;
         height: 74px;
